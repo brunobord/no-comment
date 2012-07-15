@@ -16,6 +16,7 @@ Target websites
 ---------------
 
 * sudouest.fr
+* lefigaro.fr
 
 (to be continued)
 
