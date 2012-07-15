@@ -5,6 +5,10 @@
     {
       "matches": ["http://*.sudouest.fr/*"],
       "css": ["css/sudouest.css"]
+    },
+    {
+        "matches": ["http://*.lefigaro.fr/*"],
+        "css": ["css/lefigaro.css"]
     }
   ]
 }

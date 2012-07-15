@@ -1,0 +1,4 @@
+/* remove comments on lefigaro.fr */
+div.comment {
+    display: none;
+}
