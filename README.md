@@ -17,6 +17,7 @@ Target websites
 
 * sudouest.fr
 * lefigaro.fr
+* lemonde.fr
 
 (to be continued)
 
