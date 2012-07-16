@@ -10,5 +10,9 @@
     "lefigaro": {
         "matches": ["http://*.lefigaro.fr/*"],
         "selectors": ["div.comment"]
+    },
+    "yahoo": {
+        "matches": ["http://fr.news.yahoo.com/*"],
+        "selectors": [".yom-comments", "#yom-comments"]
     }
 }

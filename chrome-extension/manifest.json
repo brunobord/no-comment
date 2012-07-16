@@ -18,6 +18,14 @@
         }, 
         {
             "matches": [
+                "http://fr.news.yahoo.com/*"
+            ], 
+            "css": [
+                "css/yahoo.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lemonde.fr/*"
             ], 
             "css": [
