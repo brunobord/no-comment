@@ -2,7 +2,7 @@
 from os import path
 import json
 
-__version__ = "0.1"
+__version__ = "0.2"
 
 ROOT_CONF = path.dirname(__file__)
 CHROME_DIR = path.join(ROOT_CONF, 'chrome')

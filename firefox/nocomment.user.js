@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name No Comment
 // @description Remove comments on news websites
-// @version 0.1
+// @version 0.2
 // @match http://*.sudouest.fr/*
 // @match http://*.lefigaro.fr/*
 // @match http://fr.news.yahoo.com/*
