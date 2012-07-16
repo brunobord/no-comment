@@ -5,7 +5,7 @@ import json
 __version__ = "0.1"
 
 ROOT_CONF = path.dirname(__file__)
-CHROME_DIR = path.join(ROOT_CONF, 'chrome-extension')
+CHROME_DIR = path.join(ROOT_CONF, 'chrome')
 FIREFOX_DIR = path.join(ROOT_CONF, 'firefox')
 manifest = {
     'name': "No Comment",
