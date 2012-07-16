@@ -18,6 +18,7 @@ Target websites
 * sudouest.fr
 * lefigaro.fr
 * lemonde.fr
+* fr.news.yahoo.com
 
 (to be continued)
 
