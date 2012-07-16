@@ -1,18 +1,22 @@
 {
     "sudouest": {
         "matches": ["http://*.sudouest.fr/*"],
+        "domain": ["sudouest.fr"],
         "selectors": ["#comments"]
     },
     "lemonde": {
         "matches": ["http://*.lemonde.fr/*"],
+        "domain": ["lemonde.fr"],
         "selectors": [".reactions"]
     },
     "lefigaro": {
         "matches": ["http://*.lefigaro.fr/*"],
+        "domain": ["lefigaro.fr"],
         "selectors": ["div.comment"]
     },
     "yahoo": {
         "matches": ["http://fr.news.yahoo.com/*"],
+        "domain": ["fr.news.yahoo.com"],
         "selectors": [".yom-comments", "#yom-comments"]
     }
 }
