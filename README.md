@@ -1,19 +1,36 @@
-No comment
-==========
+# No comment
 
 A collection of Userstyles to remove comments on various news websites. 
 My primary target is French newspapers, but I'm pretty sure you'll love to
 activate it on your favorite website.
 
-So far, I've only been able to write a chrome extension. Don't worry, I'm
-not going to make it "webkit-only", and as soon as I can figure it out, I'll
-try to make it cross-brower.
+## Install
 
-You can grab the "0.1" version here: http://media.jehaisleprintemps.net/chrome-ext/no-comment.crx
+### On Chrome / Webkit
 
+You may eventually clone this repository via the following command line::
 
-Target websites
----------------
+    git clone https://github.com/brunobord/no-comment.git
+
+Then you'll have to add the chrome extension via:
+
+    Wrench Button -> Tools -> Extensions -> Load Unpacked Extension
+
+Pick the "chrome" directory and there you are.
+
+### On Firefox
+
+As a prerequisite, you'll **need** to install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+first.
+
+Then you'll have to grab the custom userscript. Eventually, you can clone the
+repository as indicated in the Chrome procedure, and in Firefox, do:
+
+    File -> Open
+
+And pick the nocomment.user.js available in the "firefox" directory.
+
+## Target websites
 
 * sudouest.fr
 * lefigaro.fr
@@ -22,8 +39,7 @@ Target websites
 
 (to be continued)
 
-License
--------
+## License
 
 This piece of Software is released under the terms of the WTFPL. See
 http://sam.zoy.org/wtfpl/ for further details. But, basically:
