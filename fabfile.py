@@ -53,7 +53,7 @@ def build():
     json.dump(manifest, open(path.join(CHROME_DIR, 'manifest.json'), 'w'), indent=4)
 
     # firefox build
-    with open(path.join(FIREFOX_DIR, 'nocomment.user.js'), 'w') as firefox_file:
+    with open(path.join(FIREFOX_DIR, 'no-comment.user.js'), 'w') as firefox_file:
         firefox_file.write(FIREFOX_USER_SCRIPT % (
             __version__,
             "\n".join(("// @match %s" % match for match in matches)),
