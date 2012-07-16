@@ -6,7 +6,7 @@ activate it on your favorite website.
 
 ## Install
 
-### On Chrome / Webkit
+### On Chrome
 
 #### Git clone
 
