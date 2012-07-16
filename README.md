@@ -8,6 +8,8 @@ activate it on your favorite website.
 
 ### On Chrome / Webkit
 
+#### Git clone
+
 You may eventually clone this repository via the following command line::
 
     git clone https://github.com/brunobord/no-comment.git
@@ -18,10 +20,22 @@ Then you'll have to add the chrome extension via:
 
 Pick the "chrome" directory and there you are.
 
+#### Online install
+
+Or you can install it by pointing your webkit browser to:
+
+    http://media.jehaisleprintemps.net/no-comment/no-comment.crx
+
+And proceed with the installation.
+
+Please note that this archive may not be updated as frequently as you may want.
+
 ### On Firefox
 
 As a prerequisite, you'll **need** to install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 first.
+
+#### Git clone
 
 Then you'll have to grab the custom userscript. Eventually, you can clone the
 repository as indicated in the Chrome procedure, and in Firefox, do:
@@ -29,6 +43,15 @@ repository as indicated in the Chrome procedure, and in Firefox, do:
     File -> Open
 
 And pick the no-comment.user.js available in the "firefox" directory.
+
+#### Online script install
+
+Alternatively, you can point your browser to this URL:
+    
+    http://media.jehaisleprintemps.net/no-comment/no-comment.user.js
+
+Please note that this archive may not be updated as frequently as you may want.
+
 
 ## Target websites
 
