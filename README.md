@@ -28,7 +28,7 @@ repository as indicated in the Chrome procedure, and in Firefox, do:
 
     File -> Open
 
-And pick the nocomment.user.js available in the "firefox" directory.
+And pick the no-comment.user.js available in the "firefox" directory.
 
 ## Target websites
 
