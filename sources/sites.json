@@ -1,0 +1,14 @@
+{
+    "sudouest": {
+        "matches": ["http://*.sudouest.fr/*"],
+        "selectors": ["#comments"]
+    },
+    "lemonde": {
+        "matches": ["http://*.lemonde.fr/*"],
+        "selectors": [".reactions"]
+    },
+    "lefigaro": {
+        "matches": ["http://*.lefigaro.fr/*"],
+        "selectors": ["div.comment"]
+    }
+}
