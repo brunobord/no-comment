@@ -20,8 +20,8 @@
         "selectors": [".yom-comments", "#yom-comments"]
     },
     "ladepeche": {
-        "matches": ["http://www.ladepeche.fr/*"],
-        "domain": ["www.ladepeche.fr"],
+        "matches": ["http://*.ladepeche.fr/*"],
+        "domain": ["ladepeche.fr"],
         "selectors": ["#commentaires"]
-    }    
+    }
 }
