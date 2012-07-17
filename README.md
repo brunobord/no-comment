@@ -59,6 +59,7 @@ Please note that this archive may not be updated as frequently as you may want.
 * lefigaro.fr
 * lemonde.fr
 * fr.news.yahoo.com
+* ladepeche.fr
 
 (to be continued)
 
