@@ -18,5 +18,10 @@
         "matches": ["http://fr.news.yahoo.com/*"],
         "domain": ["fr.news.yahoo.com"],
         "selectors": [".yom-comments", "#yom-comments"]
-    }
+    },
+    "ladepeche": {
+        "matches": ["http://www.ladepeche.fr/*"],
+        "domain": ["www.ladepeche.fr"],
+        "selectors": ["#commentaires"]
+    }    
 }
