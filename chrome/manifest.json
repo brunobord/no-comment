@@ -18,6 +18,14 @@
         }, 
         {
             "matches": [
+                "http://*.nouvelobs.fr/*"
+            ], 
+            "css": [
+                "css/nouvelobs.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.ladepeche.fr/*"
             ], 
             "css": [

@@ -33,5 +33,10 @@
         "matches": ["http://*.humanite.fr/*"],
         "domain": ["humanite.fr"],
         "selectors": ["#comments", "#comment_box", ".comment_sep_number"]
+    },
+    "nouvelobs": {
+        "matches": ["http://*.nouvelobs.fr/*"],
+        "domain": ["nouvelobs.fr"],
+        "selectors": ["#reactions"]
     }
 }
