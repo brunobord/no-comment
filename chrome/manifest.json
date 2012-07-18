@@ -18,7 +18,7 @@
         }, 
         {
             "matches": [
-                "http://*.nouvelobs.fr/*"
+                "http://*.nouvelobs.com/*"
             ], 
             "css": [
                 "css/nouvelobs.css"

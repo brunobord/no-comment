@@ -35,8 +35,8 @@
         "selectors": ["#comments", "#comment_box", ".comment_sep_number"]
     },
     "nouvelobs": {
-        "matches": ["http://*.nouvelobs.fr/*"],
-        "domain": ["nouvelobs.fr"],
+        "matches": ["http://*.nouvelobs.com/*"],
+        "domain": ["nouvelobs.com"],
         "selectors": ["#reactions"]
     }
 }
