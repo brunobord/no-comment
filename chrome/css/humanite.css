@@ -1,4 +1,4 @@
 /* Remove comments from humanite */
-#comments, #comment_box {
+#comments, #comment_box, .comment_sep_number {
     display: none !important;
 }
