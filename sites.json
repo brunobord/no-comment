@@ -28,5 +28,10 @@
         "matches": ["http://*.lesechos.fr/*"],
         "domain": ["lesechos.fr"],
         "selectors": [".commentlist"]
+    },
+    "humanite": {
+        "matches": ["http://*.humanite.fr/*"],
+        "domain": ["humanite.fr"],
+        "selectors": ["#comments", "#comment_box"]
     }
 }

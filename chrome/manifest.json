@@ -10,6 +10,14 @@
         }, 
         {
             "matches": [
+                "http://*.humanite.fr/*"
+            ], 
+            "css": [
+                "css/humanite.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.ladepeche.fr/*"
             ], 
             "css": [
