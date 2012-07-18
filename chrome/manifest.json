@@ -3,44 +3,52 @@
         {
             "matches": [
                 "http://*.sudouest.fr/*"
-            ],
+            ], 
             "css": [
                 "css/sudouest.css"
             ]
-        },
-        {
-            "matches": [
-                "http://*.lefigaro.fr/*"
-            ],
-            "css": [
-                "css/lefigaro.css"
-            ]
-        },
-        {
-            "matches": [
-                "http://fr.news.yahoo.com/*"
-            ],
-            "css": [
-                "css/yahoo.css"
-            ]
-        },
-        {
-            "matches": [
-                "http://*.lemonde.fr/*"
-            ],
-            "css": [
-                "css/lemonde.css"
-            ]
-        },
+        }, 
         {
             "matches": [
                 "http://*.ladepeche.fr/*"
-            ],
+            ], 
             "css": [
                 "css/ladepeche.css"
             ]
+        }, 
+        {
+            "matches": [
+                "http://*.lesechos.fr/*"
+            ], 
+            "css": [
+                "css/lesechos.css"
+            ]
+        }, 
+        {
+            "matches": [
+                "http://fr.news.yahoo.com/*"
+            ], 
+            "css": [
+                "css/yahoo.css"
+            ]
+        }, 
+        {
+            "matches": [
+                "http://*.lemonde.fr/*"
+            ], 
+            "css": [
+                "css/lemonde.css"
+            ]
+        }, 
+        {
+            "matches": [
+                "http://*.lefigaro.fr/*"
+            ], 
+            "css": [
+                "css/lefigaro.css"
+            ]
         }
-    ],
-    "version": "0.2",
+    ], 
+    "version": "0.2", 
     "name": "No Comment"
 }

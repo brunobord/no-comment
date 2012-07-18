@@ -23,5 +23,10 @@
         "matches": ["http://*.ladepeche.fr/*"],
         "domain": ["ladepeche.fr"],
         "selectors": ["#commentaires"]
+    },
+    "lesechos": {
+        "matches": ["http://*.lesechos.fr/*"],
+        "domain": ["lesechos.fr"],
+        "selectors": [".commentlist"]
     }
 }
