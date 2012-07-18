@@ -38,5 +38,10 @@
         "matches": ["http://*.nouvelobs.com/*"],
         "domain": ["nouvelobs.com"],
         "selectors": ["#reactions"]
+    },
+    "lepoint": {
+        "matches": ["http://*.lepoint.fr/*"],
+        "domain": ["lepoint.fr"],
+        "selectors": ["#bloc_commentaire", ".fermeture_commentaires"]
     }
 }

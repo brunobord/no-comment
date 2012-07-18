@@ -1,0 +1,4 @@
+/* Remove comments from lepoint */
+#bloc_commentaire, .fermeture_commentaires {
+    display: none !important;
+}

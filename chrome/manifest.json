@@ -58,6 +58,14 @@
         }, 
         {
             "matches": [
+                "http://*.lepoint.fr/*"
+            ], 
+            "css": [
+                "css/lepoint.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lefigaro.fr/*"
             ], 
             "css": [

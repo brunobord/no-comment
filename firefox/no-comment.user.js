@@ -9,6 +9,7 @@
 // @match http://*.lesechos.fr/*
 // @match http://fr.news.yahoo.com/*
 // @match http://*.lemonde.fr/*
+// @match http://*.lepoint.fr/*
 // @match http://*.lefigaro.fr/*
 // ==/UserScript==
 
@@ -19,4 +20,5 @@ GM_addStyle("@-moz-document domain(ladepeche.fr) {     /* Remove comments from l
 GM_addStyle("@-moz-document domain(lesechos.fr) {     /* Remove comments from lesechos */ .commentlist {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(fr.news.yahoo.com) {     /* Remove comments from yahoo */ .yom-comments, #yom-comments {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lemonde.fr) {     /* Remove comments from lemonde */ .reactions {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(lepoint.fr) {     /* Remove comments from lepoint */ #bloc_commentaire, .fermeture_commentaires {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lefigaro.fr) {     /* Remove comments from lefigaro */ div.comment {     display: none !important; }  } ");
