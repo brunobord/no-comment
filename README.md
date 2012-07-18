@@ -4,6 +4,8 @@ A collection of Userstyles to remove comments on various news websites.
 My primary target is French newspapers, but I'm pretty sure you'll love to
 activate it on your favorite website.
 
+----
+
 ## Install
 
 ### On Chrome
@@ -67,6 +69,69 @@ Please note that this archive may not be updated as frequently as you may want.
 * lepoint.fr
 
 (to be continued)
+
+----
+
+## Contribute
+
+If you want to contribute, you have several choices:
+
+### Issue reporting
+
+Something can go wrong... Something **will** go wrong. Please report it on the
+appropriate [github issue tracker](https://github.com/brunobord/no-comment/issues).
+
+If you're pissed off by some news website commenters,
+[please report it](https://github.com/brunobord/no-comment/issues) and if
+possible, we may zap the comment blocks and publish an updated version of the
+Firefox / Chrome extension.
+
+If you have a feature request, please submit an issue and we'll try to do our
+best to help you out.
+
+### Fork / Pull requests
+
+If you want, you can fork this repository, and, according to the License (see
+below), you can do whatever you want with it. Of course, we do accept legit 
+pull requests, as long as they improve this extension.
+
+#### Requisites
+
+You'll have to install Fabric. In a virtualenv or globally:
+
+    pip install fabric
+
+If you want to add a website, edit the ``sites.json`` file and add a block like
+this:
+
+```json
+    "mywebsite": {
+        "matches": ["http://*.example.com/*"],
+        "domain": ["example.com"],
+        "selectors": ["#comment"]
+    }
+```
+
+When you're done, run:
+
+    fab build
+
+This will produce a ``mywebsite.css`` file in the ``chrome/css`` directory and
+modify the other files (manifest.json and the GreaseMonkey userscript).
+
+Test and double-check that your extension is working by installing the
+GreaseMonkey userscript in your Firefox and/or loading the "unpacked" extension
+in your Chrome browser. Once you're done, push everything with a nice commit
+message, and call for a pull request.
+
+#### Other "TODOs"
+
+"No Comment" is only available for Chrome and Firefox. This needs to be extended
+to other browsers. If you know how to (simply) implement this extension for other
+browsers, please get in touch with us via the Github Issues and we'll try to
+spread happiness and joy around us.
+
+----
 
 ## License
 
