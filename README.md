@@ -55,11 +55,16 @@ Please note that this archive may not be updated as frequently as you may want.
 
 ## Target websites
 
-* sudouest.fr
-* lefigaro.fr
-* lemonde.fr
-* fr.news.yahoo.com
-* ladepeche.fr
+* sudouest.fr,
+* lefigaro.fr,
+* lemonde.fr,
+* fr.news.yahoo.com,
+* ladepeche.fr,
+* humanite.fr,
+* lesechos.fr,
+* nouvelobs.com,
+* leparisien.fr,
+* lepoint.fr
 
 (to be continued)
 
