@@ -43,5 +43,10 @@
         "matches": ["http://*.lepoint.fr/*"],
         "domain": ["lepoint.fr"],
         "selectors": ["#bloc_commentaire", ".fermeture_commentaires"]
+    },
+    "leparisien": {
+        "matches": ["http://*.leparisien.fr/*"],
+        "domain": ["leparisien.fr"],
+        "selectors": ["#blocreactions"]
     }
 }

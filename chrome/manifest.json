@@ -58,6 +58,14 @@
         }, 
         {
             "matches": [
+                "http://*.leparisien.fr/*"
+            ], 
+            "css": [
+                "css/leparisien.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lepoint.fr/*"
             ], 
             "css": [
