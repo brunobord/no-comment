@@ -32,6 +32,6 @@
     "humanite": {
         "matches": ["http://*.humanite.fr/*"],
         "domain": ["humanite.fr"],
-        "selectors": ["#comments", "#comment_box"]
+        "selectors": ["#comments", "#comment_box", ".comment_sep_number"]
     }
 }

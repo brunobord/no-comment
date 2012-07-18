@@ -1,4 +1,4 @@
 /* Remove comments from sudouest */
 #comments {
-    display: none;
+    display: none !important;
 }

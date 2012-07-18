@@ -11,10 +11,10 @@
 // @match http://*.lefigaro.fr/*
 // ==/UserScript==
 
-GM_addStyle("@-moz-document domain(sudouest.fr) {     /* Remove comments from sudouest */ #comments {     display: none; }  } ");
-GM_addStyle("@-moz-document domain(humanite.fr) {     /* Remove comments from humanite */ #comment_box {     display: none; }  } ");
-GM_addStyle("@-moz-document domain(ladepeche.fr) {     /* Remove comments from ladepeche */ #commentaires {     display: none; }  } ");
-GM_addStyle("@-moz-document domain(lesechos.fr) {     /* Remove comments from lesechos */ .commentlist {     display: none; }  } ");
-GM_addStyle("@-moz-document domain(fr.news.yahoo.com) {     /* Remove comments from yahoo */ .yom-comments, #yom-comments {     display: none; }  } ");
-GM_addStyle("@-moz-document domain(lemonde.fr) {     /* Remove comments from lemonde */ .reactions {     display: none; }  } ");
-GM_addStyle("@-moz-document domain(lefigaro.fr) {     /* Remove comments from lefigaro */ div.comment {     display: none; }  } ");
+GM_addStyle("@-moz-document domain(sudouest.fr) {     /* Remove comments from sudouest */ #comments {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(humanite.fr) {     /* Remove comments from humanite */ #comments, #comment_box {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(ladepeche.fr) {     /* Remove comments from ladepeche */ #commentaires {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(lesechos.fr) {     /* Remove comments from lesechos */ .commentlist {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(fr.news.yahoo.com) {     /* Remove comments from yahoo */ .yom-comments, #yom-comments {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(lemonde.fr) {     /* Remove comments from lemonde */ .reactions {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(lefigaro.fr) {     /* Remove comments from lefigaro */ div.comment {     display: none !important; }  } ");

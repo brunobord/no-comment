@@ -1,4 +1,4 @@
 /* Remove comments from lesechos */
 .commentlist {
-    display: none;
+    display: none !important;
 }
