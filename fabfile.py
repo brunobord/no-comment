@@ -14,7 +14,7 @@ manifest = {
 
 CSS_PATTERN = """/* Remove comments from %s */
 %s {
-    display: none;
+    display: none !important;
 }
 """
 
