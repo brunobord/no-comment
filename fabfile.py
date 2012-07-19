@@ -3,7 +3,7 @@ from os import path
 import json
 from fabric.api import task, local
 
-__version__ = "0.2"
+__version__ = "0.3"
 
 ROOT_CONF = path.dirname(__file__)
 CHROME_DIR = path.join(ROOT_CONF, 'chrome')
