@@ -37,6 +37,7 @@ FIREFOX_DOMAIN_STYLE = """@-moz-document domain(%s) {
 
 @task
 def build():
+    # opening json file
     sites = json.load(open(path.join(ROOT_CONF, 'sites.json')))
     content_scripts = []
     matches = []
@@ -49,9 +50,11 @@ def build():
         for domain in site_data['domain']:
             firefox_styles.append(FIREFOX_DOMAIN_STYLE % (domain, css_pattern))
         with open(path.join(CHROME_DIR, css_path), 'w') as css_file:
+            # Writing down each css file
             css_file.write(css_pattern)
 
     manifest["content_scripts"] = content_scripts
+    # Dumping to manifest for the Chrome extension
     json.dump(manifest, open(path.join(CHROME_DIR, 'manifest.json'), 'w'), indent=4)
 
     # firefox build
@@ -59,6 +62,7 @@ def build():
         firefox_file.write(FIREFOX_USER_SCRIPT % (
             __version__,
             "\n".join(("// @match %s" % match for match in matches)),
+            # It's easier to join the lines in the Greasemonkey script.
             "\n".join(['GM_addStyle("%s");' % style.replace("\n", " ") for style in firefox_styles])
             )
         )
