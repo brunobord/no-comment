@@ -21,6 +21,8 @@ FIREFOX_DIR = path.join(ROOT_CONF, 'firefox')
 manifest = {
     'name': "No Comment",
     'version': __version__,
+    'description': 'Remove comments on news website',
+    "manifest_version": 2
 }
 
 CSS_PATTERN = """/* Remove comments from %s */
