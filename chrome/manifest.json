@@ -82,5 +82,7 @@
         }
     ], 
     "version": "0.3", 
-    "name": "No Comment"
+    "name": "No Comment", 
+    "manifest_version": 2, 
+    "description": "Remove comments on news website"
 }
