@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 from os import path
 import json
-from fabric.api import task
+from fabric.api import task, local
 
 __version__ = "0.2"
 
@@ -66,3 +66,9 @@ def build():
             "\n".join(['GM_addStyle("%s");' % style.replace("\n", " ") for style in firefox_styles])
             )
         )
+    # Zip the stuff for Chrome
+    destination_crx = path.join(ROOT_CONF, 'no-comment.crx')
+    local('rm -f %s' % destination_crx)
+    local("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --pack-extension=%s --pack-extension-key=%s  --no-message-box"
+        % (CHROME_DIR, path.join(ROOT_CONF, 'no-comment.pem')))
+    local('mv %s %s' % (path.join(ROOT_CONF, 'chrome.crx'), destination_crx))
