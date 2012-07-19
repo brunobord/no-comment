@@ -1,9 +1,19 @@
 #-*- coding: utf-8 -*-
+import sys
 from os import path
 import json
 from fabric.api import task, local
 
 __version__ = "0.3"
+
+if sys.platform == 'windows':
+    CHROME_EXE = 'chrome.exe'
+elif sys.platform == 'darwin':
+    CHROME_EXE = '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+elif sys.platform == 'linux2':
+    CHROME_EXE = 'chromium-browser'  # Lucky guess
+else:
+    raise NotImplementedError('We do not know your platform and where is your Chrome Executable')
 
 ROOT_CONF = path.dirname(__file__)
 CHROME_DIR = path.join(ROOT_CONF, 'chrome')
@@ -69,6 +79,6 @@ def build():
     # Zip the stuff for Chrome
     destination_crx = path.join(ROOT_CONF, 'no-comment.crx')
     local('rm -f %s' % destination_crx)
-    local("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --pack-extension=%s --pack-extension-key=%s  --no-message-box"
-        % (CHROME_DIR, path.join(ROOT_CONF, 'no-comment.pem')))
+    local("%s --pack-extension=%s --pack-extension-key=%s  --no-message-box"
+        % (CHROME_EXE, CHROME_DIR, path.join(ROOT_CONF, 'no-comment.pem')))
     local('mv %s %s' % (path.join(ROOT_CONF, 'chrome.crx'), destination_crx))
