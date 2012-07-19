@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 from os import path
 import json
+from fabric.api import task
 
 __version__ = "0.2"
 
@@ -34,6 +35,7 @@ FIREFOX_DOMAIN_STYLE = """@-moz-document domain(%s) {
 """
 
 
+@task
 def build():
     sites = json.load(open(path.join(ROOT_CONF, 'sites.json')))
     content_scripts = []
