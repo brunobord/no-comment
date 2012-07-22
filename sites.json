@@ -58,5 +58,10 @@
         "matches": ["http://*.francefootball.fr/*"],
         "domain": ["francefootball.fr"],
         "selectors": [".commentaires"]
+    },
+    "rue89": {
+        "matches": ["http://*.rue89.com/*"],
+        "domain": ["rue89.com"],
+        "selectors": ["#commentaires"]
     }
 }

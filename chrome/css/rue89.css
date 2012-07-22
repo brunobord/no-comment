@@ -1,0 +1,4 @@
+/* Remove comments from rue89 */
+#commentaires {
+    display: none !important;
+}

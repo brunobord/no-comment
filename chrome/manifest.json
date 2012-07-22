@@ -34,6 +34,14 @@
         }, 
         {
             "matches": [
+                "http://*.rue89.com/*"
+            ], 
+            "css": [
+                "css/rue89.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lesechos.fr/*"
             ], 
             "css": [

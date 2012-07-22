@@ -6,6 +6,7 @@
 // @match http://*.humanite.fr/*
 // @match http://*.nouvelobs.com/*
 // @match http://*.ladepeche.fr/*
+// @match http://*.rue89.com/*
 // @match http://*.lesechos.fr/*
 // @match http://fr.news.yahoo.com/*
 // @match http://*.lequipe.fr/*
@@ -20,6 +21,7 @@ GM_addStyle("@-moz-document domain(sudouest.fr) {     /* Remove comments from su
 GM_addStyle("@-moz-document domain(humanite.fr) {     /* Remove comments from humanite */ #comments, #comment_box, .comment_sep_number {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(nouvelobs.com) {     /* Remove comments from nouvelobs */ #reactions {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(ladepeche.fr) {     /* Remove comments from ladepeche */ #commentaires {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(rue89.com) {     /* Remove comments from rue89 */ #commentaires {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lesechos.fr) {     /* Remove comments from lesechos */ .commentlist {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(fr.news.yahoo.com) {     /* Remove comments from yahoo */ .yom-comments, #yom-comments {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lequipe.fr) {     /* Remove comments from lequipe */ #commentaires {     display: none !important; }  } ");
