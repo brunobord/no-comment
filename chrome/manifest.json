@@ -50,6 +50,14 @@
         }, 
         {
             "matches": [
+                "http://*.lequipe.fr/*"
+            ], 
+            "css": [
+                "css/lequipe.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lemonde.fr/*"
             ], 
             "css": [
@@ -62,6 +70,14 @@
             ], 
             "css": [
                 "css/leparisien.css"
+            ]
+        }, 
+        {
+            "matches": [
+                "http://*.francefootball.fr/*"
+            ], 
+            "css": [
+                "css/francefootball.css"
             ]
         }, 
         {

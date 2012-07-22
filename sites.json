@@ -48,5 +48,15 @@
         "matches": ["http://*.leparisien.fr/*"],
         "domain": ["leparisien.fr"],
         "selectors": ["#blocreactions"]
+    },
+    "lequipe": {
+        "matches": ["http://*.lequipe.fr/*"],
+        "domain": ["lequipe.fr"],
+        "selectors": ["#commentaires"]
+    },
+    "francefootball": {
+        "matches": ["http://*.francefootball.fr/*"],
+        "domain": ["francefootball.fr"],
+        "selectors": [".commentaires"]
     }
 }
