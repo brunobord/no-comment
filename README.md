@@ -101,6 +101,8 @@ You'll have to install Fabric. In a virtualenv or globally:
 
     pip install fabric
 
+#### Add a website
+
 If you want to add a website, edit the ``sites.json`` file and add a block like
 this:
 
