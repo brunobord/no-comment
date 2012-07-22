@@ -66,7 +66,10 @@ Please note that this archive may not be updated as frequently as you may want.
 * lesechos.fr,
 * nouvelobs.com,
 * leparisien.fr,
-* lepoint.fr
+* lepoint.fr,
+* francefootball.fr,
+* lequipe.fr,
+* rue89.com
 
 (to be continued)
 
