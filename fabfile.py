@@ -15,9 +15,11 @@ elif sys.platform == 'linux2':
 else:
     raise NotImplementedError('We do not know your platform and where is your Chrome Executable')
 
-ROOT_CONF = path.dirname(__file__)
-CHROME_DIR = path.join(ROOT_CONF, 'chrome')
-FIREFOX_DIR = path.join(ROOT_CONF, 'firefox')
+HOSTING_ROOT = 'http://brunobord.github.com/no-comment/'
+
+ROOT_DIR = path.dirname(__file__)
+CHROME_DIR = path.join(ROOT_DIR, 'chrome')
+FIREFOX_DIR = path.join(ROOT_DIR, 'firefox')
 manifest = {
     'name': "No Comment",
     'version': __version__,
@@ -49,8 +51,9 @@ FIREFOX_DOMAIN_STYLE = """@-moz-document domain(%s) {
 
 @task
 def build():
+    "Build the different extensions"
     # opening json file
-    sites = json.load(open(path.join(ROOT_CONF, 'sites.json')))
+    sites = json.load(open(path.join(ROOT_DIR, 'sites.json')))
     content_scripts = []
     matches = []
     firefox_styles = []
@@ -79,8 +82,8 @@ def build():
             )
         )
     # Zip the stuff for Chrome
-    destination_crx = path.join(ROOT_CONF, 'no-comment.crx')
+    destination_crx = path.join(ROOT_DIR, 'no-comment.crx')
     local('rm -f %s' % destination_crx)
     local("%s --pack-extension=%s --pack-extension-key=%s  --no-message-box"
-        % (CHROME_EXE, CHROME_DIR, path.join(ROOT_CONF, 'no-comment.pem')))
-    local('mv %s %s' % (path.join(ROOT_CONF, 'chrome.crx'), destination_crx))
+        % (CHROME_EXE, CHROME_DIR, path.join(ROOT_DIR, 'no-comment.pem')))
+    local('mv %s %s' % (path.join(ROOT_DIR, 'chrome.crx'), destination_crx))
