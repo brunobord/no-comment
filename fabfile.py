@@ -4,7 +4,7 @@ from os import path
 import json
 from fabric.api import task, local
 
-__version__ = "0.3"
+__version__ = "0.4"
 
 if sys.platform == 'windows':
     CHROME_EXE = 'chrome.exe'
@@ -24,7 +24,8 @@ manifest = {
     'name': "No Comment",
     'version': __version__,
     'description': 'Remove comments on news website',
-    "manifest_version": 2
+    "manifest_version": 2,
+    'update_url': path.join(HOSTING_ROOT, 'updates.xml'),
 }
 
 CSS_PATTERN = """/* Remove comments from %s */
@@ -46,6 +47,14 @@ FIREFOX_USER_SCRIPT = """// ==UserScript==
 FIREFOX_DOMAIN_STYLE = """@-moz-document domain(%s) {
     %s
 }
+"""
+
+CHROME_XML_AUTOUPDATE = """<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='hlimmofdnfpejfemmhdoehigmeoacdoc'>
+    <updatecheck codebase='%s' version='%s' />
+  </app>
+</gupdate>
 """
 
 
@@ -71,6 +80,13 @@ def build():
     manifest["content_scripts"] = content_scripts
     # Dumping to manifest for the Chrome extension
     json.dump(manifest, open(path.join(CHROME_DIR, 'manifest.json'), 'w'), indent=4)
+
+    # Autoupdate file
+    with open(path.join(ROOT_DIR, 'updates.xml'), "w") as fd:
+        fd.write(CHROME_XML_AUTOUPDATE % (
+                path.join(HOSTING_ROOT, 'no-comment.crx'),
+                __version__
+            ))
 
     # firefox build
     with open(path.join(FIREFOX_DIR, 'no-comment.user.js'), 'w') as firefox_file:

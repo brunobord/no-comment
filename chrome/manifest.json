@@ -105,8 +105,9 @@
             ]
         }
     ], 
-    "version": "0.3", 
     "name": "No Comment", 
+    "version": "0.4", 
     "manifest_version": 2, 
+    "update_url": "http://brunobord.github.com/no-comment/updates.xml", 
     "description": "Remove comments on news website"
 }

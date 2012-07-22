@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name No Comment
 // @description Remove comments on news websites
-// @version 0.3
+// @version 0.4
 // @match http://*.sudouest.fr/*
 // @match http://*.humanite.fr/*
 // @match http://*.nouvelobs.com/*
