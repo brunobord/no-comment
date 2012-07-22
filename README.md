@@ -26,7 +26,7 @@ Pick the "chrome" directory and there you are.
 
 Or you can install it by pointing your webkit browser to:
 
-    http://media.jehaisleprintemps.net/no-comment/no-comment.crx
+    http://brunobord.github.com/no-comment/no-comment.crx
 
 And proceed with the installation.
 
@@ -50,7 +50,7 @@ And pick the no-comment.user.js available in the "firefox" directory.
 
 Alternatively, you can point your browser to this URL:
     
-    http://media.jehaisleprintemps.net/no-comment/no-comment.user.js
+    http://brunobord.github.com/no-comment/no-comment.user.js
 
 Please note that this archive may not be updated as frequently as you may want.
 
