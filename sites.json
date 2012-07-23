@@ -63,5 +63,10 @@
         "matches": ["http://*.rue89.com/*"],
         "domain": ["rue89.com"],
         "selectors": ["#commentaires"]
+    },
+    "clubic": {
+		"matches": ["http://*.clubic.com/*"],
+		"domain": ["clubic.com"],
+		"selectors": [".comments"]
     }
 }
