@@ -1,0 +1,4 @@
+/* Remove comments from clubic */
+.comments {
+    display: none !important;
+}
