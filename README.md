@@ -1,8 +1,8 @@
 # No comment
 
-A collection of Userstyles to remove comments on various news websites. 
-My primary target is French newspapers, but I'm pretty sure you'll love to
-activate it on your favorite website.
+A collection of Userstyles to remove comments on various websites. My primary
+target is French online newspapers, but I'm pretty sure you'll love to activate
+it on your favorite website.
 
 ----
 
@@ -69,7 +69,8 @@ Please note that this archive may not be updated as frequently as you may want.
 * lepoint.fr,
 * francefootball.fr,
 * lequipe.fr,
-* rue89.com
+* rue89.com,
+* youtube.com (yes, that'd mean an insane amount of rubbish out of your sight)
 
 (to be continued)
 
