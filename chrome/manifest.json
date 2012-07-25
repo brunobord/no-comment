@@ -58,6 +58,14 @@
         }, 
         {
             "matches": [
+                "http://*.youtube.com/*"
+            ], 
+            "css": [
+                "css/youtube.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://fr.news.yahoo.com/*"
             ], 
             "css": [

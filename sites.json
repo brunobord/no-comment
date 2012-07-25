@@ -68,5 +68,10 @@
 		"matches": ["http://*.clubic.com/*"],
 		"domain": ["clubic.com"],
 		"selectors": [".comments"]
+    },
+    "youtube": {
+        "matches": ["http://*.youtube.com/*"],
+        "domain": ["youtube.com"],
+        "selectors": ["#watch-discussion"]
     }
 }
