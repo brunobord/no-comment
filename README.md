@@ -70,7 +70,9 @@ Please note that this archive may not be updated as frequently as you may want.
 * francefootball.fr,
 * lequipe.fr,
 * rue89.com,
-* youtube.com (yes, that'd mean an insane amount of rubbish out of your sight)
+* youtube.com (yes, that'd mean an insane amount of rubbish out of your sight),
+* dailymotion.com,
+* vimeo.com
 
 (to be continued)
 

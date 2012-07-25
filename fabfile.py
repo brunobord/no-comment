@@ -4,7 +4,7 @@ from os import path
 import json
 from fabric.api import task, local
 
-__version__ = "0.4"
+__version__ = "0.5"
 
 if sys.platform == 'windows':
     CHROME_EXE = 'chrome.exe'
