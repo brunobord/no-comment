@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>No-comment by brunobord</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>No-comment</h1>
+        <p>Remove comments on news websites</p>
+
+        <p class="view"><a href="https://github.com/brunobord/no-comment">View the Project on GitHub <small>brunobord/no-comment</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/brunobord/no-comment/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/brunobord/no-comment/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/brunobord/no-comment">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>No comment</h1>
+
+<p>A collection of Userstyles to remove comments on various websites. My primary
+target is French online newspapers, but I'm pretty sure you'll love to activate
+it on your favorite website.</p>
+
+<hr><h2>Install</h2>
+
+<h3>On Chrome</h3>
+
+<h4>Git clone</h4>
+
+<p>You may eventually clone this repository via the following command line::</p>
+
+<pre><code>git clone https://github.com/brunobord/no-comment.git
+</code></pre>
+
+<p>Then you'll have to add the chrome extension via:</p>
+
+<pre><code>Wrench Button -&gt; Tools -&gt; Extensions -&gt; Load Unpacked Extension
+</code></pre>
+
+<p>Pick the "chrome" directory and there you are.</p>
+
+<h4>Online install</h4>
+
+<p>Or you can install it by pointing your webkit browser to:</p>
+
+<pre><code>http://brunobord.github.com/no-comment/no-comment.crx
+</code></pre>
+
+<p>And proceed with the installation.</p>
+
+<p>Please note that this archive may not be updated as frequently as you may want.</p>
+
+<h3>On Firefox</h3>
+
+<p>As a prerequisite, you'll <strong>need</strong> to install <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a>
+first.</p>
+
+<h4>Git clone</h4>
+
+<p>Then you'll have to grab the custom userscript. Eventually, you can clone the
+repository as indicated in the Chrome procedure, and in Firefox, do:</p>
+
+<pre><code>File -&gt; Open
+</code></pre>
+
+<p>And pick the no-comment.user.js available in the "firefox" directory.</p>
+
+<h4>Online script install</h4>
+
+<p>Alternatively, you can point your browser to this URL:</p>
+
+<pre><code>http://brunobord.github.com/no-comment/no-comment.user.js
+</code></pre>
+
+<p>Please note that this archive may not be updated as frequently as you may want.</p>
+
+<h2>Target websites</h2>
+
+<ul>
+<li>sudouest.fr,</li>
+<li>lefigaro.fr,</li>
+<li>lemonde.fr,</li>
+<li>fr.news.yahoo.com,</li>
+<li>ladepeche.fr,</li>
+<li>humanite.fr,</li>
+<li>lesechos.fr,</li>
+<li>nouvelobs.com,</li>
+<li>leparisien.fr,</li>
+<li>lepoint.fr,</li>
+<li>francefootball.fr,</li>
+<li>lequipe.fr,</li>
+<li>rue89.com,</li>
+<li>youtube.com (yes, that'd mean an insane amount of rubbish out of your sight),</li>
+<li>dailymotion.com,</li>
+<li>vimeo.com</li>
+</ul><p>(to be continued)</p>
+
+<hr><h2>Contribute</h2>
+
+<p>If you want to contribute, you have several choices:</p>
+
+<h3>Issue reporting</h3>
+
+<p>Something can go wrong... Something <strong>will</strong> go wrong. Please report it on the
+appropriate <a href="https://github.com/brunobord/no-comment/issues">github issue tracker</a>.</p>
+
+<p>If you're pissed off by some news website commenters,
+<a href="https://github.com/brunobord/no-comment/issues">please report it</a> and if
+possible, we may zap the comment blocks and publish an updated version of the
+Firefox / Chrome extension.</p>
+
+<p>If you have a feature request, please submit an issue and we'll try to do our
+best to help you out.</p>
+
+<h3>Fork / Pull requests</h3>
+
+<p>If you want, you can fork this repository, and, according to the License (see
+below), you can do whatever you want with it. Of course, we do accept legit 
+pull requests, as long as they improve this extension.</p>
+
+<h4>Requisites</h4>
+
+<p>You'll have to install Fabric. In a virtualenv or globally:</p>
+
+<pre><code>pip install fabric
+</code></pre>
+
+<h4>Add a website</h4>
+
+<p>If you want to add a website, edit the <code>sites.json</code> file and add a block like
+this:</p>
+
+<div class="highlight"><pre>    <span class="s2">"mywebsite"</span><span class="err">:</span> <span class="p">{</span>
+        <span class="nt">"matches"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"http://*.example.com/*"</span><span class="p">],</span>
+        <span class="nt">"domain"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"example.com"</span><span class="p">],</span>
+        <span class="nt">"selectors"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"#comment"</span><span class="p">]</span>
+    <span class="p">}</span>
+</pre></div>
+
+<p>When you're done, run:</p>
+
+<pre><code>fab build
+</code></pre>
+
+<p>This will produce a <code>mywebsite.css</code> file in the <code>chrome/css</code> directory and
+modify the other files (manifest.json and the GreaseMonkey userscript).</p>
+
+<p>Test and double-check that your extension is working by installing the
+GreaseMonkey userscript in your Firefox and/or loading the "unpacked" extension
+in your Chrome browser. Once you're done, push everything with a nice commit
+message, and call for a pull request.</p>
+
+<h4>Other "TODOs"</h4>
+
+<p>"No Comment" is only available for Chrome and Firefox. This needs to be extended
+to other browsers. If you know how to (simply) implement this extension for other
+browsers, please get in touch with us via the Github Issues and we'll try to
+spread happiness and joy around us.</p>
+
+<hr><h2>License</h2>
+
+<p>This piece of Software is released under the terms of the WTFPL. See
+<a href="http://sam.zoy.org/wtfpl/">http://sam.zoy.org/wtfpl/</a> for further details. But, basically:</p>
+
+<pre><code>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+0. You just DO WHAT THE FUCK YOU WANT TO. 
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/brunobord">brunobord</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
