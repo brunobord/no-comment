@@ -1,0 +1,4 @@
+/* Remove comments from dailymotion */
+#tab_comments_content, .tab_comments {
+    display: none !important;
+}

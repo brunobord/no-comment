@@ -1,0 +1,4 @@
+/* Remove comments from vimeo */
+#comments {
+    display: none !important;
+}

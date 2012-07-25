@@ -73,5 +73,15 @@
         "matches": ["http://*.youtube.com/*"],
         "domain": ["youtube.com"],
         "selectors": ["#watch-discussion"]
+    },
+    "dailymotion": {
+        "matches": ["http://*.dailymotion.com/*"],
+        "domain": ["dailymotion.com"],
+        "selectors": ["#tab_comments_content", ".tab_comments"]
+    },
+    "vimeo": {
+        "matches": ["http://*.vimeo.com/*"],
+        "domain": ["vimeo.com"],
+        "selectors": ["#comments"]
     }
 }
