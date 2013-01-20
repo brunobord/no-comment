@@ -72,7 +72,8 @@ Please note that this archive may not be updated as frequently as you may want.
 * rue89.com,
 * youtube.com (yes, that'd mean an insane amount of rubbish out of your sight),
 * dailymotion.com,
-* vimeo.com
+* vimeo.com,
+* twitter.com (Trending topics, you know how they became lame),
 
 (to be continued)
 
