@@ -30,9 +30,9 @@
       <section>
         <h1>No comment</h1>
 
-<p>A collection of Userstyles to remove comments on various news websites. 
-My primary target is French newspapers, but I'm pretty sure you'll love to
-activate it on your favorite website.</p>
+<p>A collection of Userstyles to remove comments on various websites. My primary
+target is French online newspapers, but I'm pretty sure you'll love to activate
+it on your favorite website.</p>
 
 <hr><h2>Install</h2>
 
@@ -102,7 +102,11 @@ repository as indicated in the Chrome procedure, and in Firefox, do:</p>
 <li>lepoint.fr,</li>
 <li>francefootball.fr,</li>
 <li>lequipe.fr,</li>
-<li>rue89.com</li>
+<li>rue89.com,</li>
+<li>youtube.com (yes, that'd mean an insane amount of rubbish out of your sight),</li>
+<li>dailymotion.com,</li>
+<li>vimeo.com,</li>
+<li>twitter.com (Trending topics, you know how they became lame),</li>
 </ul><p>(to be continued)</p>
 
 <hr><h2>Contribute</h2>
@@ -125,7 +129,7 @@ best to help you out.</p>
 <h3>Fork / Pull requests</h3>
 
 <p>If you want, you can fork this repository, and, according to the License (see
-below), you can do whatever you want with it. Of course, we do accept legit 
+below), you can do whatever you want with it. Of course, we do accept legit
 pull requests, as long as they improve this extension.</p>
 
 <h4>Requisites</h4>
@@ -140,15 +144,12 @@ pull requests, as long as they improve this extension.</p>
 <p>If you want to add a website, edit the <code>sites.json</code> file and add a block like
 this:</p>
 
-<div class="highlight">
-<pre>    <span class="s2">"mywebsite"</span><span class="err">:</span> <span class="p">{</span>
+<div class="highlight"><pre>    <span class="s2">"mywebsite"</span><span class="err">:</span> <span class="p">{</span>
         <span class="nt">"matches"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"http://*.example.com/*"</span><span class="p">],</span>
         <span class="nt">"domain"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"example.com"</span><span class="p">],</span>
         <span class="nt">"selectors"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"#comment"</span><span class="p">]</span>
     <span class="p">}</span>
-</pre>
-</div>
-
+</pre></div>
 
 <p>When you're done, run:</p>
 
@@ -175,10 +176,10 @@ spread happiness and joy around us.</p>
 <p>This piece of Software is released under the terms of the WTFPL. See
 <a href="http://sam.zoy.org/wtfpl/">http://sam.zoy.org/wtfpl/</a> for further details. But, basically:</p>
 
-<pre><code>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+<pre><code>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-0. You just DO WHAT THE FUCK YOU WANT TO. 
+0. You just DO WHAT THE FUCK YOU WANT TO.
 </code></pre>
       </section>
       <footer>
@@ -187,6 +188,6 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
