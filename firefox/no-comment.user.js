@@ -17,6 +17,8 @@
 // @match http://*.leparisien.fr/*
 // @match http://*.vimeo.com/*
 // @match http://*.francefootball.fr/*
+// @match http://*.twitter.com/*
+// @match https://*.twitter.com/*
 // @match http://*.lepoint.fr/*
 // @match http://*.lefigaro.fr/*
 // ==/UserScript==
@@ -36,5 +38,6 @@ GM_addStyle("@-moz-document domain(lemonde.fr) {     /* Remove comments from lem
 GM_addStyle("@-moz-document domain(leparisien.fr) {     /* Remove comments from leparisien */ #blocreactions {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(vimeo.com) {     /* Remove comments from vimeo */ #comments {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(francefootball.fr) {     /* Remove comments from francefootball */ .commentaires {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(twitter.com) {     /* Remove comments from twitter */ .trends-container {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lepoint.fr) {     /* Remove comments from lepoint */ #bloc_commentaire, .fermeture_commentaires {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lefigaro.fr) {     /* Remove comments from lefigaro */ div.comment {     display: none !important; }  } ");

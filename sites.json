@@ -83,5 +83,10 @@
         "matches": ["http://*.vimeo.com/*"],
         "domain": ["vimeo.com"],
         "selectors": ["#comments"]
+    },
+    "twitter": {
+        "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*"],
+        "domain": ["twitter.com"],
+        "selectors": [".trends-container"]
     }
 }

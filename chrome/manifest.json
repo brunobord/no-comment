@@ -122,6 +122,15 @@
         }, 
         {
             "matches": [
+                "http://*.twitter.com/*", 
+                "https://*.twitter.com/*"
+            ], 
+            "css": [
+                "css/twitter.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lepoint.fr/*"
             ], 
             "css": [
