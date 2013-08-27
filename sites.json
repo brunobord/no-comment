@@ -88,5 +88,10 @@
         "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*"],
         "domain": ["twitter.com"],
         "selectors": [".trends-container"]
+    },
+    "slate.fr": {
+        "matches": ["http://*.slate.fr/*"],
+        "domain": ["slate.fr"],
+        "selectors": ["div.article_comment_item"]
     }
 }

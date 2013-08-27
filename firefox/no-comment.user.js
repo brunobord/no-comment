@@ -10,6 +10,7 @@
 // @match http://*.rue89.com/*
 // @match http://*.dailymotion.com/*
 // @match http://*.lesechos.fr/*
+// @match http://*.slate.fr/*
 // @match http://*.youtube.com/*
 // @match http://fr.news.yahoo.com/*
 // @match http://*.lequipe.fr/*
@@ -31,6 +32,7 @@ GM_addStyle("@-moz-document domain(clubic.com) {     /* Remove comments from clu
 GM_addStyle("@-moz-document domain(rue89.com) {     /* Remove comments from rue89 */ #commentaires {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(dailymotion.com) {     /* Remove comments from dailymotion */ #tab_comments_content, .tab_comments {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lesechos.fr) {     /* Remove comments from lesechos */ .commentlist {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(slate.fr) {     /* Remove comments from slate.fr */ div.article_comment_item {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(youtube.com) {     /* Remove comments from youtube */ #watch-discussion {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(fr.news.yahoo.com) {     /* Remove comments from yahoo */ .yom-comments, #yom-comments {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lequipe.fr) {     /* Remove comments from lequipe */ #commentaires {     display: none !important; }  } ");

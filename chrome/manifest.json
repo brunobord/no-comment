@@ -66,6 +66,14 @@
         }, 
         {
             "matches": [
+                "http://*.slate.fr/*"
+            ], 
+            "css": [
+                "css/slate.fr.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.youtube.com/*"
             ], 
             "css": [
