@@ -1,4 +1,4 @@
 /* Remove comments from lefigaro */
-div.comment {
+.fig-comment {
     display: none !important;
 }

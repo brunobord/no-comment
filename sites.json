@@ -12,7 +12,7 @@
     "lefigaro": {
         "matches": ["http://*.lefigaro.fr/*"],
         "domain": ["lefigaro.fr"],
-        "selectors": ["div.comment"]
+        "selectors": [".fig-comment"]
     },
     "yahoo": {
         "matches": ["http://fr.news.yahoo.com/*"],

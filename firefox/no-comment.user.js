@@ -40,4 +40,4 @@ GM_addStyle("@-moz-document domain(vimeo.com) {     /* Remove comments from vime
 GM_addStyle("@-moz-document domain(francefootball.fr) {     /* Remove comments from francefootball */ .commentaires {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(twitter.com) {     /* Remove comments from twitter */ .trends-container {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lepoint.fr) {     /* Remove comments from lepoint */ #bloc_commentaire, .fermeture_commentaires {     display: none !important; }  } ");
-GM_addStyle("@-moz-document domain(lefigaro.fr) {     /* Remove comments from lefigaro */ div.comment {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(lefigaro.fr) {     /* Remove comments from lefigaro */ .fig-comment {     display: none !important; }  } ");
