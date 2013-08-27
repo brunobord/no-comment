@@ -1,0 +1,4 @@
+/* Remove comments from slate.fr */
+div.article_comment_item {
+    display: none !important;
+}

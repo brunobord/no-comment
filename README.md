@@ -74,6 +74,8 @@ Please note that this archive may not be updated as frequently as you may want.
 * dailymotion.com,
 * vimeo.com,
 * twitter.com (Trending topics, you know how they became lame),
+* slate.fr,
+* 20minutes.fr,
 
 (to be continued)
 
