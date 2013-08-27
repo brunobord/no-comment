@@ -13,6 +13,8 @@
 // @match http://*.slate.fr/*
 // @match http://*.youtube.com/*
 // @match http://fr.news.yahoo.com/*
+// @match http://*.20minutes.fr/*
+// @match https://*.20minutes.fr/*
 // @match http://*.lequipe.fr/*
 // @match http://*.lemonde.fr/*
 // @match http://*.leparisien.fr/*
@@ -35,6 +37,7 @@ GM_addStyle("@-moz-document domain(lesechos.fr) {     /* Remove comments from le
 GM_addStyle("@-moz-document domain(slate.fr) {     /* Remove comments from slate.fr */ div.article_comment_item {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(youtube.com) {     /* Remove comments from youtube */ #watch-discussion {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(fr.news.yahoo.com) {     /* Remove comments from yahoo */ .yom-comments, #yom-comments {     display: none !important; }  } ");
+GM_addStyle("@-moz-document domain(20minutes.fr) {     /* Remove comments from 20minutes */ #mn-comments-list, .comments {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lequipe.fr) {     /* Remove comments from lequipe */ #commentaires {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(lemonde.fr) {     /* Remove comments from lemonde */ .reactions {     display: none !important; }  } ");
 GM_addStyle("@-moz-document domain(leparisien.fr) {     /* Remove comments from leparisien */ #blocreactions {     display: none !important; }  } ");

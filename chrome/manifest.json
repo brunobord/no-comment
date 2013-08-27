@@ -90,6 +90,15 @@
         }, 
         {
             "matches": [
+                "http://*.20minutes.fr/*", 
+                "https://*.20minutes.fr/*"
+            ], 
+            "css": [
+                "css/20minutes.css"
+            ]
+        }, 
+        {
+            "matches": [
                 "http://*.lequipe.fr/*"
             ], 
             "css": [

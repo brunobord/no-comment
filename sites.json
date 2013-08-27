@@ -93,5 +93,11 @@
         "matches": ["http://*.slate.fr/*"],
         "domain": ["slate.fr"],
         "selectors": ["div.article_comment_item"]
+    },
+    "20minutes": {
+        "matches": ["http://*.20minutes.fr/*", "https://*.20minutes.fr/*"],
+        "domain": ["20minutes.fr"],
+        "selectors": ["#mn-comments-list", ".comments"]
     }
+
 }
